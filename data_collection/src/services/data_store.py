@@ -1,5 +1,6 @@
 from typing import Dict, Any, List, Optional, Union
 import json
+import time
 from datetime import datetime
 import aiofiles
 import asyncio
@@ -34,7 +35,7 @@ class DataStore:
                 "metadata": {
                     "symbol": symbol,
                     "provider": provider,
-                    "timestamp": datetime.now(),
+                    "timestamp": datetime.fromtimestamp(time.time()).strftime("%Y-%m-%d %H:%M:%S"),
                     "storage_key": storage_key
                 },
                 "data": data
