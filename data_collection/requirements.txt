@@ -1,0 +1,29 @@
+# API Clients
+requests==2.31.0
+yfinance==0.2.33
+
+# Data Processing
+pandas
+numpy
+
+# Validation
+pydantic==2.5.2
+
+# Configuration
+PyYAML==6.0.1
+
+# Async Support
+aiohttp==3.9.1
+asyncio==3.4.3
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+
+# Logging
+loguru==0.7.2
+
+# Cache
+cachetools==5.3.2
+
+aiofiles==0.7.0

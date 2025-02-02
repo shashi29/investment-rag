@@ -1,0 +1,19 @@
+alpha_vantage:
+  api_key: ELH4JHL4BBJ5GK94
+  base_url: "https://www.alphavantage.co/query"
+  rate_limit:
+    calls_per_minute: 5
+    calls_per_day: 500
+  endpoints:
+    intraday: "TIME_SERIES_INTRADAY"
+    daily: "TIME_SERIES_DAILY"
+    quote: "GLOBAL_QUOTE"
+
+yahoo_finance:
+  rate_limit:
+    calls_per_second: 2
+    calls_per_hour: 2000
+  features:
+    - historical_data
+    - real_time_quotes
+    - company_info
